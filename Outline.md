@@ -157,18 +157,16 @@
     *   JSlice (Java slicing tool).
     *   Understand how these tools work and their capabilities.
 
-## VIII. Software Re-factoring
+## VIII. Additional Topics
 
-*   **Reasons for Re-factoring:**
-    *   Improve code quality, maintainability, readability, and flexibility.
-*   **Re-factoring Techniques:**
-    *   Extract method, encapsulate field, rename, move, etc.
-    *   Understand the purpose and application of each technique.
-*   **Automated Re-factoring Tools:**
-    *   Eclipse, IntelliJ IDEA, etc.
-    *   Be familiar with the capabilities of these tools.
-
-## IX. Additional Topics
+- **Refactoring:**
+  - **Reasons:** Improve code quality, maintainability, readability, and flexibility.
+  - **Re-factoring Techniques:**
+    - Extract method, encapsulate field, rename, move, etc.
+    - Understand the purpose and application of each technique.
+  - **Automated Re-factoring Tools:**
+    - Eclipse, IntelliJ IDEA, etc.
+    - Be familiar with the capabilities of these tools.
 
 *   **Javascript and OO:**
     *   Understand the challenges and limitations of using OO concepts in Javascript.
@@ -190,7 +188,7 @@
     *   Importance of documentation in software development.
     *   Types of documentation (UML diagrams, user guides, system guides, etc.).
 
-## X. Exam Question Types
+## IX. Exam Question Types
 
 *   Calculate EQF and bias.
 *   Draw dependency graphs.
