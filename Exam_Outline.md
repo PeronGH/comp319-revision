@@ -95,9 +95,12 @@
         *   Application domain experience, process quality, project size, technology support, working environment
     4. **Estimation Quality Factor (EQF)**
         *   Definition and calculation
+            *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$
         *   Interpretation (higher is better)
     5. **Estimation Bias**
         *   Definition and calculation
+            *   $\text{Bias} = \text{Mean}(\text{Estimator}) – \text{ActualValue}$
+            *   $\text{BiasPercentage} = \frac{\text{Mean}(\text{Estimator}) – \text{ActualValue}}{\text{ActualValue}}$
         *   Interpretation (positive vs. negative bias)
     6. **Factors affecting estimation accuracy**
         *   Early estimations are harder
