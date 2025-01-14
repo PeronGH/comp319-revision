@@ -43,7 +43,7 @@
     *   Definition and impact of estimation bias.
     *   Factors affecting estimation accuracy.
     *   Understand how to calculate EQF and bias. The ability to draw conclusions about project performance based on EQF and bias data will be assessed.
-*   Boem's Cone of Uncertainty:
+*   **Boem's Cone of Uncertainty:**
     - Understand how the accuracy of estimates changes over the project lifecycle.
 *   **Be able to calculate EQF and bias figures from project data. (Based on past exams)**
 *   **Be able to discuss the criticisms given in the "The Rise and Fall of the Chaos report figures" and explain the authors' own approach in evaluating project performance. (Based on past exams)**
