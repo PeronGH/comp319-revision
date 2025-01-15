@@ -10,7 +10,7 @@
             *   Clear seperation of concerns
             *   Easier to port software (e.g., one UI platform to another)
             *   Loose coupling between view and model
-            *   Teamwork, one for VC (view & controller) code, another for business logic
+            *   Teamwork, one for VC (view & controller) code, another for model
     
         *   **Coupling between components:**
             *   View - Controller: Tight; controller processes input and instructs view to render
@@ -148,14 +148,13 @@
       - **Project resolutions:** Successful, Challenged, Incomplete.
       - **Criticisms:** incomplete classification, lack of context, bias in measurement.
 *   **B. Project Management Constraints**
-    *   The "Pick Two" triangle (Time, Quality, Cost)
-    *   Trade-offs between constraints
-    *   Brooks' Law ("Adding manpower to a late software project makes it later.")
+    *   The "Pick Two" **triangle:** Time, Quality, Cost
+    *   **Brooks' Law:** "Adding manpower to a late software project makes it later."
 *   **C. Cost Estimation**
     1. **Techniques**
-        *   Expert estimation (e.g., planning poker, Wideband Delphi)
-        *   Formal estimation (e.g., COCOMO)
-        *   Combined methods
+        *   **Expert estimation** (e.g., planning poker, Wideband Delphi)
+        *   **Formal estimation** (e.g., COCOMO)
+        *   **Combined methods**
     2. **Metrics**
         *   Lines of Code (LOC)
         *   Function Points
@@ -164,13 +163,17 @@
         *   Application domain experience, process quality, project size, technology support, working environment
     4. **Estimation Quality Factor (EQF)**
         *   Definition and calculation
-            *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$
-        *   Interpretation (higher is better)
+            *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$ where $\text{Deviation} = \text{Actual} - \text{Forecasted}$
+        *   Interpretation: higher is better
+            *   $\text{EQF} > 10$ is considered very good.
     5. **Estimation Bias**
         *   Definition and calculation
             *   $\text{Bias} = \text{Mean}(\text{Estimator}) – \text{ActualValue}$
             *   $\text{BiasPercentage} = \frac{\text{Mean}(\text{Estimator}) – \text{ActualValue}}{\text{ActualValue}}$
-        *   Interpretation (positive vs. negative bias)
+        *   Interpretation
+            *   $= 0$: unbiased
+            *   $> 0$: overestimate
+            *   $< 0$: underestimate
     6. **Factors affecting estimation accuracy**
         *   Early estimations are harder
         *   Management pressure
