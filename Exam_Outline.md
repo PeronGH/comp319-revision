@@ -8,7 +8,9 @@
         *   **Components:** Model (data & business logic), View (UI), Controller (glue)
         *   **Benefits:**
             *   Clear seperation of concerns
-            *   Easier to port software UI platform to UI platform
+            *   Easier to port software (e.g., one UI platform to another)
+            *   Loose coupling between view and model
+            *   Teamwork, one for VC (view & controller) code, another for business logic
     
         *   **Coupling between components:**
             *   View - Controller: Tight; controller processes input and instructs view to render
@@ -97,6 +99,7 @@
             *   Can implement role-based access control
     
     9. **Chain of Responsibility**
+    
         *   **Definition:** pass requests along a chain of handlers
         *   **Example:** System logging
     
@@ -108,7 +111,7 @@
     
     11. **Multiton**
     
-         *   **Definition:** multiple managed instances, keyed access
+         *   **Definition:** singleton managing multiple instances, keyed access
          *   **Example:** Customer Relationship Manager (CRM) instances
     
 *   **B. OO Principles (SOLID)**
@@ -121,7 +124,6 @@
         *   Classes should be open for extension but closed for modification.
         *   Use interfaces, abstract classes, `final`, and `protected` keywords.
         *   Avoids modifying existing code, which can introduce bugs.
-        *   Template pattern as an example.
     3. **Liskov Substitution Principle**
         *   Subtypes must be substitutable for their base types.
         *   Avoids unexpected behavior when using inheritance.
@@ -138,10 +140,13 @@
 ## II. Project Management and Cost Estimation
 
 *   **A. Software Engineering Crisis**
-    *   Historical context (Standish Chaos Report)
-    *   Types of failures (catastrophic, chronic)
-    *   Reasons for project failure (incomplete requirements, poor planning, etc.)
-    *   Criticisms of the Chaos Report (e.g., "The Rise and Fall of the Chaos Report Figures")
+    - **Types of Failures:**
+      - **Catastrophic:** Major failures with severe consequences (e.g., Ariane 5 crash).
+      - **Chronic:** Project overruns, functionality issues, poor performance, low-quality code.
+    - **Reasons:** Incomplete, over-budget, buggy, late, undelivered features, unsupportable code, poor platform compatibility.
+    - **Standish Chaos Report:**
+      - **Project resolutions:** Successful, Challenged, Incomplete.
+      - **Criticisms:** incomplete classification, lack of context, bias in measurement.
 *   **B. Project Management Constraints**
     *   The "Pick Two" triangle (Time, Quality, Cost)
     *   Trade-offs between constraints
