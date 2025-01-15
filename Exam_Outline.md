@@ -4,32 +4,34 @@
 
 *   **A. OO Design Patterns**
     1. **Model-View-Controller (MVC)**
-        
+    
         *   **Components:** Model (data & business logic), View (UI), Controller (glue)
-        *   **Purpose:** Separation of concerns
-        *   **Benefits:** Testability, maintainability, scalability, flexibility
+        *   **Benefits:**
+            *   Clear seperation of concerns
+            *   Easier to port software UI platform to UI platform
+    
         *   **Coupling between components:**
-            *   View - Controller: Tight
-            *   Controller - Model: Loose
-            *   Model - View: None
-        
+            *   View - Controller: Tight; controller processes input and instructs view to render
+            *   Controller - Model: Moderate; controller passes events to model
+            *   Model - View: Loose; view may fetch data from model
+    
     2. **Singleton**
-        
-        *   **Definition:** Ensuring only one instance of a class
-        
-        *   **Purpose:** Resource management, global state, single point of control
-        
-        *   **Implementation:** Private constructor, static instance
-        
+    
+        *   **Definition:** ensuring only one instance of a class
+    
+        *   **Purpose:** resource management, global state, single point of control
+    
+        *   **Implementation:** private constructor, static instance
+    
         *   **Instantiation:**
-        
-            *   Lazy: Created when first requested
-            *   Eager: Created at the time the class is loaded or initialized
-        
+    
+            *   Lazy: created when first requested
+            *   Eager: created at the time the class is loaded or initialized
+    
         *   **Double-checked locking:**
-        
+    
             *   If lazily instantiated by multiple threads, multiple singleton may be created if there is only one check
-        
+    
             *   ```java
                 public class Singleton {
                     private static volatile Singleton instance;  // Note the 'volatile' keyword
@@ -48,50 +50,66 @@
                     }
                 }
                 ```
-        
+    
     3. **Abstract Factory**
-        *   Definition and purpose (creating families of related objects)
-        *   Factory methods
-        *   Use cases (e.g., different encryption algorithms, UI components for different OS)
-        
+    
+        *   **Definition:**
+            *   `AbstractFactory` creates `AbstractProduct`
+            *   `ConcreteFactory` implementing `AbstractFactory` creates `ConcreteProduct` implementing `AbstractProduct`
+        *   **Purpose:** create families of related objects
+        *   **Factory method:** a static method creating different `ConcreteProduct` implementing `AbstractProduct` based on input.
+        *   **Use cases:** different encryption algorithms, UI components for different OS
+    
     4. **Builder**
-        *   Definition and purpose (separating object construction from its representation)
-        *   Abstract interface vs. concrete implementation
-        *   Use cases (e.g., SQL statement builder)
-        
+    
+        *   **Definition:** the builder allows you to construct the object piece by piece. The final object can be constructed once necessary information is provided.
+        *   **Purpose:** separate object construction from its representation
+        *   **Use cases:** SQL statement builder, HTTP request builder
+    
     5. **Wrapper/Adapter**
-        *   Definition and purpose (adapting interfaces, providing a standard interface to different implementations)
-        *   Use cases (e.g., database connectors, SMS providers)
-        
+    
+        *   **Definition:** adapt interfaces, providing a standard interface to different implementations
+        *   **Benefits:** 
+            *   Easier to swap modules
+            *   Easier to implement standard functions
+        *   **Use cases:** database connectors, SMS providers
+    
     6. **Façade**
-        *   Definition and purpose (simplified interface to a complex subsystem)
+    
+        *   **Definition:** provide simplified interface to a complex subsystem & hide internal details
         *   Package access control to enforce the use of the facade
-        
+    
     7. **Memento**
-        *   Definition and purpose (capturing and restoring object state)
-        *   Components: Originator, Memento, Caretaker
-        *   Use cases (e.g., undo/redo, version control)
-        *   Implementation (inner class for memento)
-        
+    
+        *   **Definition:** snapshot capturing and restoring object state
+        *   **Components:** Originator (holding state), Memento (the snapshot), Caretaker (holding Memento objects)
+        *   **Use cases:** undo/redo, version control
+        *   **Implementation:** defined as inner class of Originator to share data with Originator privately
+    
     8. **Command**
-        *   Definition and purpose (encapsulating requests as objects)
-        *   Benefits (e.g., easier validation, authentication, logging)
-        *   Command interface and base class
-        
+    
+        *   **Definition:** encapsulate requests as objects
+        *   **Benefits:**
+            *   All arguments can be validated once for each command
+            *   Can return standardized results or status codes
+            *   Security logic can be implemented at the command level to unify authentication
+            *   The command interface is adaptable
+            *   Can implement role-based access control
+    
     9. **Chain of Responsibility**
-        *   Definition and purpose (passing requests along a chain of handlers)
-        *   Example: System logging
-        
+        *   **Definition:** pass requests along a chain of handlers
+        *   **Example:** System logging
+    
     10. **Flyweight**
-        
-        *   Definition and purpose (sharing memory for similar objects)
+    
+        *   **Definition:** share memory for similar objects
         *   Related to Multiton
-        *   Example: Font definitions in a word processor
-        
+        *   **Example:** Font definitions in a word processor
+    
     11. **Multiton**
-        
-        *   Definition and purpose (multiple managed instances, keyed access)
-        *   Example: Customer Relationship Manager (CRM) instances
+    
+         *   **Definition:** multiple managed instances, keyed access
+         *   **Example:** Customer Relationship Manager (CRM) instances
     
 *   **B. OO Principles (SOLID)**
     
