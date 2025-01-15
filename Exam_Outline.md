@@ -4,51 +4,97 @@
 
 *   **A. OO Design Patterns**
     1. **Model-View-Controller (MVC)**
-        *   Definition, purpose, and benefits
-        *   Components: Model, View, Controller
-        *   Coupling between components
-        *   Examples (e.g., webmail example)
-        *   Implementing MVC in different technologies (JSP, ASPX, etc.)
+        
+        *   **Components:** Model (data & business logic), View (UI), Controller (glue)
+        *   **Purpose:** Separation of concerns
+        *   **Benefits:** Testability, maintainability, scalability, flexibility
+        *   **Coupling between components:**
+            *   View - Controller: Tight
+            *   Controller - Model: Loose
+            *   Model - View: None
+        
     2. **Singleton**
-        *   Definition and purpose (ensuring only one instance of a class)
-        *   Implementation (private constructor, static instance)
-        *   Lazy vs. eager instantiation
-        *   Thread safety, double-checked locking (issues, correct implementation)
+        
+        *   **Definition:** Ensuring only one instance of a class
+        
+        *   **Purpose:** Resource management, global state, single point of control
+        
+        *   **Implementation:** Private constructor, static instance
+        
+        *   **Instantiation:**
+        
+            *   Lazy: Created when first requested
+            *   Eager: Created at the time the class is loaded or initialized
+        
+        *   **Double-checked locking:**
+        
+            *   If lazily instantiated by multiple threads, multiple singleton may be created if there is only one check
+        
+            *   ```java
+                public class Singleton {
+                    private static volatile Singleton instance;  // Note the 'volatile' keyword
+                
+                    private Singleton() {}
+                
+                    public static Singleton getInstance() {
+                        if (instance == null) { // First check (without locking)
+                            synchronized (Singleton.class) {
+                                if (instance == null) { // Second check (within synchronized block)
+                                    instance = new Singleton();
+                                }
+                            }
+                        }
+                        return instance;
+                    }
+                }
+                ```
+        
     3. **Abstract Factory**
         *   Definition and purpose (creating families of related objects)
         *   Factory methods
         *   Use cases (e.g., different encryption algorithms, UI components for different OS)
+        
     4. **Builder**
         *   Definition and purpose (separating object construction from its representation)
         *   Abstract interface vs. concrete implementation
         *   Use cases (e.g., SQL statement builder)
+        
     5. **Wrapper/Adapter**
         *   Definition and purpose (adapting interfaces, providing a standard interface to different implementations)
         *   Use cases (e.g., database connectors, SMS providers)
+        
     6. **Façade**
         *   Definition and purpose (simplified interface to a complex subsystem)
         *   Package access control to enforce the use of the facade
+        
     7. **Memento**
         *   Definition and purpose (capturing and restoring object state)
         *   Components: Originator, Memento, Caretaker
         *   Use cases (e.g., undo/redo, version control)
         *   Implementation (inner class for memento)
+        
     8. **Command**
         *   Definition and purpose (encapsulating requests as objects)
         *   Benefits (e.g., easier validation, authentication, logging)
         *   Command interface and base class
+        
     9. **Chain of Responsibility**
         *   Definition and purpose (passing requests along a chain of handlers)
         *   Example: System logging
+        
     10. **Flyweight**
+        
         *   Definition and purpose (sharing memory for similar objects)
         *   Related to Multiton
         *   Example: Font definitions in a word processor
+        
     11. **Multiton**
+        
         *   Definition and purpose (multiple managed instances, keyed access)
         *   Example: Customer Relationship Manager (CRM) instances
-
+    
 *   **B. OO Principles (SOLID)**
+    
     1. **Single Responsibility Principle**
         *   Each class should have one specific responsibility.
         *   Improves code maintainability, reusability, testability, and coherence.
