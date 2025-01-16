@@ -124,6 +124,7 @@
         *   Classes should be open for extension but closed for modification.
         *   Use interfaces, abstract classes, `final`, and `protected` keywords.
         *   Avoids modifying existing code, which can introduce bugs.
+        *   Could be implemented using **template method**.
     3. **Liskov Substitution Principle**
         *   Subtypes must be substitutable for their base types.
         *   Avoids unexpected behavior when using inheritance.
@@ -147,40 +148,53 @@
     - **Standish Chaos Report:**
       - **Project resolutions:** Successful, Challenged, Incomplete.
       - **Criticisms:** incomplete classification, lack of context, bias in measurement.
+    
 *   **B. Project Management Constraints**
     *   The "Pick Two" **triangle:** Time, Quality, Cost
     *   **Brooks' Law:** "Adding manpower to a late software project makes it later."
+    
 *   **C. Cost Estimation**
     1. **Techniques**
         *   **Expert estimation** (e.g., planning poker, Wideband Delphi)
         *   **Formal estimation** (e.g., COCOMO)
         *   **Combined methods**
+    
     2. **Metrics**
         *   Lines of Code (LOC)
         *   Function Points
         *   Object Points
+    
     3. **Factors affecting productivity**
         *   Application domain experience, process (e.g., agile, waterfall) quality, project size, technology support (e.g., IDE), working environment
+    
     4. **Estimation Quality Factor (EQF)**
-        *   Definition and calculation
-            *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$ where $\text{Deviation} = \text{Actual} - \text{Forecasted}$
-        *   Interpretation: higher is better
+    
+        - Determine the quality of estimation.
+    
+        *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$ where $\text{Deviation} = \text{Actual} - \text{Estimator}$
+    
+        *   Interpretation
+            *   higher is better
             *   $\text{EQF} > 10$ is considered very good.
+    
     5. **Estimation Bias**
-        *   Definition and calculation
-            *   $\text{Bias} = \text{Mean}(\text{Forecasted}) – \text{ActualValue}$
+    
+        *   $\text{Bias} = \text{Mean}(\text{Estimator}) – \text{ActualValue}$
             *   $\text{BiasPercentage} = \frac{\text{Bias}}{\text{ActualValue}}$
+    
         *   Interpretation
             *   $= 0$: unbiased
             *   $> 0$: overestimate
             *   $< 0$: underestimate
+    
     6. **Factors affecting estimation accuracy**
+    
         *   Early estimations are harder
+            *   Boem's Cone of Uncertainty
         *   Management pressure
         *   Inexperienced developers
         *   Lack of design
         *   Quality of the specification
-    7. **Boem's Cone of Uncertainty**
 
 ## III. Agile, XP, and Scrum
 
@@ -260,7 +274,7 @@
             *   Too vague for contractual basis
             *   Suitable only for experienced developers
             *   Size estimation ignores non-functional requirements
-    *   **XP Planning**
+    *   **XP Process**
         *   User stories written jointly by customer and developers
         *   Stories estimated by developers
         *   Stories ordered by priority
