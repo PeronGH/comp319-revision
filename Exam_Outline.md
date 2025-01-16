@@ -160,7 +160,7 @@
         *   Function Points
         *   Object Points
     3. **Factors affecting productivity**
-        *   Application domain experience, process quality, project size, technology support, working environment
+        *   Application domain experience, process (e.g., agile, waterfall) quality, project size, technology support (e.g., IDE), working environment
     4. **Estimation Quality Factor (EQF)**
         *   Definition and calculation
             *   $\text{EQF} = \frac{1}{\text{Average}(\frac{\text{Deviation}}{\text{Actual}})}$ where $\text{Deviation} = \text{Actual} - \text{Forecasted}$
@@ -168,8 +168,8 @@
             *   $\text{EQF} > 10$ is considered very good.
     5. **Estimation Bias**
         *   Definition and calculation
-            *   $\text{Bias} = \text{Mean}(\text{Estimator}) – \text{ActualValue}$
-            *   $\text{BiasPercentage} = \frac{\text{Mean}(\text{Estimator}) – \text{ActualValue}}{\text{ActualValue}}$
+            *   $\text{Bias} = \text{Mean}(\text{Forecasted}) – \text{ActualValue}$
+            *   $\text{BiasPercentage} = \frac{\text{Bias}}{\text{ActualValue}}$
         *   Interpretation
             *   $= 0$: unbiased
             *   $> 0$: overestimate
@@ -185,8 +185,30 @@
 ## III. Agile, XP, and Scrum
 
 *   **A. Agile Principles**
-    *   Agile Manifesto
-    *   12 principles of Agile development
+    
+    *   **Core values:**
+    
+        1. **Individuals and interactions** over processes and tools
+    
+        2. **Working software** over comprehensive documentation
+    
+        3. **Customer collaboration** over contract negotiation
+    
+        4. **Responding to change** over following a plan
+    *   **Principles:**
+    
+        1. Customer satisfaction through early and continuous delivery
+        2. Welcome changing requirements, even late in development
+        3. Deliver working software frequently
+        4. Business people and developers work together daily
+        5. Build projects around motivated individuals
+        6. Face-to-face conversation is the best form of communication
+        7. Working software is the primary measure of progress
+        8. Promote sustainable development pace
+        9. Continuous attention to technical excellence
+        10. Simplicity is essential
+        11. Self-organizing teams produce the best results
+        12. Regular reflection and adjustment of team behavior
 *   **B. Extreme Programming (XP)**
     *   User stories (INVEST – Independent, Negotiable, Valuable, Estimable, Small, Testable)
     *   Pair programming
@@ -221,43 +243,5 @@
         *   Velocity
     5. **Scrum Values**
         *   Commitment, Focus, Openness, Respect, Courage
-
-## IV. Unimportant Topics
-
-*   **A. Program Slicing**
-    *   Forward and backward slicing
-    *   Static and dynamic slicing
-    *   Dependency graphs
-    *   Use cases: debugging, program understanding, maintenance
-    *   Tools: JSlice
-*   **B. Actor Model**
-    *   Concurrency model
-    *   Actors: independent units of computation
-    *   Messaging: asynchronous, no shared memory
-    *   Mailboxes
-    *   Fair scheduling
-    *   Location transparency
-    *   Mobility (strong vs. weak)
-    *   Examples: Erlang, Akka, Actor Foundry
-*   **C. Javascript**
-    *   OO features in Javascript
-        *   Prototypes, inheritance, dynamic typing
-    *   Benefits and limitations compared to Java
-    *   Privacy: private is not available in Javascript, but there are workarounds to emulate it (closures, naming convention, obfuscation)
-    *   Concurrency in Javascript (single-threaded, non-blocking I/O, async/await)
-    *   Use of Javascript for building web applications
-    *   HTML5, DOM, AJAX, JSON
-    *   Javascript libraries (Jquery, PIXI JS, AngularJS, SoundJS)
-    *   Mobile development with Javascript (Phonegap, React Native, Flutter)
-    *   Node.js for server-side development
-*   **D. Typescript**
-    *   Superset of Javascript
-    *   Strong static typing
-    *   Compiled into Javascript
-*   **E. Design by Contract**
-    *   Use assertions to define pre-conditions, post-conditions, and invariants
-    *   Helps to ensure code correctness and improve documentation
-*   **F. Re-factoring**
-    *   Definition and purpose
-    *   Common re-factoring techniques (e.g., Extract Method, Rename, Encapsulate Field)
-    *   Tools support for re-factoring (e.g., in Eclipse)
+    
+*   **D. Planning Poker**
