@@ -273,15 +273,23 @@
             *   Too vague for contractual basis
             *   Suitable only for experienced developers
             *   Size estimation ignores non-functional requirements
+    
     *   **XP Process**
-        *   User stories written jointly by customer and developers
-        *   Stories estimated by developers
-        *   Stories ordered by priority
-            *   High-priority code developed and **tested** before any low-priority code
-                *   Unit tests (by developer) & Acceptance tests (by user)
-        *   Project plan determines when features will be delivered
-        *   Regular iteration schedule established
+    
+        1. User stories written jointly by customer and developers
+    
+        2. Stories estimated by developers
+    
+        3. Stories ordered by priority
+           *   High-priority code developed and **tested** before any low-priority code
+               *   Unit tests (by developer) & Acceptance tests (by user)
+    
+        4. Project plan determines when features will be delivered
+    
+        5. Regular iteration schedule established
+    
     *   **Pair programming**
+    
         *   Two programmers: driver and observer, collective code ownership
         *   **Benefits:** reduced defects, knowledge sharing
         *   **Drawbacks:** cost, personality conflicts (non-matching skills), not replacement for code review
