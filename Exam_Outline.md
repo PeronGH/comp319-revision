@@ -264,7 +264,7 @@
 
          * Can be verified
     * are estimated using **story points**:
-    * Relative, based on team's perspective, not tied to time units
+      * Relative, based on team's perspective, not tied to time units
     * are **criticised** for:
       * Capturing only functional requirements
       * Too vague for contractual basis
