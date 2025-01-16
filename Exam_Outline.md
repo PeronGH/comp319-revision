@@ -235,37 +235,31 @@
             1. Independent
     
                - Minimal dependencies on other stories
-           - More flexibility on planning and prioritisation
-               
-        2. Negotiable
-            
-           - Details can be discussed and modified
-            
-           - Room for collaboration
-            
-        3. Valuable
-            
-           - Delivers value to stakeholders
-            
-           - Clear benefit to users
-            
-        4. Estimable
-            
-           - Team can estimate the effort required
-            
-           - Scope is clear enough to plan
-            
-        5. Small
-            
-           - Can be completed in one sprint
-            
-           - Allows for frequent feedback and adjustments
-            
-        6. Testable
-            
-           - Clear acceptance criteria
-            
-           - Can be verified
+              
+              - More flexibility on planning and prioritisation
+                
+           2. Negotiable
+           
+              - Details can be discussed and modified
+           
+              - Room for collaboration
+           
+           3. Valuable
+              - Delivers value to stakeholders
+           
+              - Clear benefit to users
+           4. Estimable
+              - Team can estimate the effort required
+           
+              - Scope is clear enough to plan
+           5. Small
+              - Can be completed in one iteration
+           
+              - Allows for frequent feedback and adjustments
+           6. Testable
+              - Clear acceptance criteria
+           
+              - Can be verified
         *   are estimated using **story points**:
         *   Relative, based on team's perspective, not tied to time units
         *   are **criticised** for:
@@ -291,7 +285,7 @@
     *   **Pair programming**
     
         *   Two programmers: driver and observer, collective code ownership
-        *   **Benefits:** reduced defects, knowledge sharing
+        *   **Benefits:** reduced defects, knowledge sharing, reasearch: more time coding & less bug
         *   **Drawbacks:** cost, personality conflicts (non-matching skills), not replacement for code review
     
 *   **C. Scrum**
