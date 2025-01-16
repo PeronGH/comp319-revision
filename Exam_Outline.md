@@ -209,39 +209,154 @@
         10. Simplicity is essential
         11. Self-organizing teams produce the best results
         12. Regular reflection and adjustment of team behavior
+    
 *   **B. Extreme Programming (XP)**
-    *   User stories (INVEST – Independent, Negotiable, Valuable, Estimable, Small, Testable)
-    *   Pair programming
-        *   Benefits (reduced defects, knowledge sharing)
-        *   Drawbacks (cost, personality conflicts)
-        *   Research findings (e.g., Williams, Lui)
-    *   Test-driven development (TDD)
-    *   Continuous integration
-    *   Refactoring
-    *   On-site customer
-    *   Planning game
-    *   Small releases
-    *   Collective code ownership
+    
+    *   **User stories**
+    
+        *   are short, simple descriptions of a feature told from the perspective of the user.
+    
+        *   are **INVEST**:
+    
+            1. Independent
+    
+               - Story should be self-contained
+    
+               - Minimal dependencies on other stories
+    
+            2. Negotiable
+    
+               - Details can be discussed and modified
+    
+               - Room for collaboration
+    
+            3. Valuable
+    
+               - Delivers value to stakeholders
+    
+               - Clear benefit to users
+    
+            4. Estimable
+    
+               - Team can estimate the effort required
+    
+               - Scope is clear enough to plan
+    
+            5. Small
+    
+               - Can be completed in one sprint
+    
+               - Not too big or complex
+    
+            6. Testable
+    
+               - Clear acceptance criteria
+    
+               - Can be verified
+        *   are estimated using **story points**:
+        *   Relative, based on team's perspective, not tied to time units
+        *   are **criticised** for:
+            *   Capturing only functional requirements
+            *   Too vague for contractual basis
+            *   Suitable only for experienced developers
+            *   Size estimation ignores non-functional requirements
+    *   **XP Planning**
+        *   User stories written jointly by customer and developers
+        *   Stories estimated by developers
+        *   Stories ordered by priority
+            *   High-priority code developed and **tested** before any low-priority code
+                *   Unit tests (by developer) & Acceptance tests (by user)
+        *   Project plan determines when features will be delivered
+        *   Regular iteration schedule established
+    *   **Pair programming**
+        *   Two programmers: driver and observer, collective code ownership
+        *   **Benefits:** reduced defects, knowledge sharing
+        *   **Drawbacks:** cost, personality conflicts (non-matching skills), not replacement for code review
+    
 *   **C. Scrum**
-    1. **Roles**
-        *   Product Owner
-        *   Scrum Master
-        *   Development Team
-    2. **Events**
-        *   Sprint Planning
-        *   Daily Scrum
-        *   Sprint Review
-        *   Sprint Retrospective
-    3. **Artifacts**
-        *   Product Backlog
-        *   Sprint Backlog
-        *   Increment (working software)
-    4. **Concepts**
-        *   Sprints (iterations)
-        *   Timeboxing
-        *   Burndown charts
-        *   Velocity
-    5. **Scrum Values**
-        *   Commitment, Focus, Openness, Respect, Courage
+    1. **Key Roles:**
+    
+        - Product Owner
+          - Liaises with all stakeholders
+    
+        - Developers
+          - Development team members
+    
+        - SCRUM Master
+    
+          - Enables day-to-day SCRUM practice
+    
+          - Not a people manager or project manager
+    
+          - Supports self-organizing team
+    
+          - Manages daily scrum and removes obstacles
+    
+          - Provides communication between team and management
+    
+          - Controls what goes into sprints
+    
+          - Builds release plan
+    
+    2. **Key Components:**
+    
+       - **Product Backlog**
+    
+         - Maintained throughout project
+    
+         - Shows outstanding work
+    
+         - Description of all features
+    
+         - Features are prioritized
+    
+         - Items are time/cost estimated
+    
+       - **Sprint Planning**
+    
+         - Customer prioritizes work from backlog
+    
+         - Reviews current backlog
+    
+         - May add/drop features
+    
+         - Decides what goes into sprint backlog
+    
+       - **Sprint Backlog**
+    
+         - All tasks for current sprint
+    
+         - Tasks typically 4-16 hours
+    
+         - Developers sign up for tasks (not assigned)
+    
+       - **Sprint**
+    
+         - Iteration of 1-4 weeks
+    
+         - Produces deliverable user-testable version
+    
+         - Time boxed
+    
+         - Only completed/tested functions included
+    
+         - Progress tracked via sprint burndown
+    
+       - **Daily SCRUM** (Daily Stand-up)
+         - 15-minute meeting at start of day
+         - Covers:
+           - Progress since yesterday
+           - Planning for today
+           - Obstacles preventing completion
     
 *   **D. Planning Poker**
+
+    *   **Process:**
+        1. Each member of the planning team is given a pack of cards with numbers on them
+        2. Project manager introduces project
+           - Team clarifies assumptions
+           - Discuss risk
+        3. Each member picks a card as their estimate
+        4. Lowest and highest estimation members given chance to justify their decision
+        5. Discuss, then go back to step 3, until consensus is reached
+    *   Prevents bias from early estimates
